@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-:sloth: I moved to [Institute of Science and Technology Austria](https://ista.ac.at/en/home/) :austria: :spark:
+:sloth: I moved to [Institute of Science and Technology Austria](https://ista.ac.at/en/home/) :austria: :sparkles:

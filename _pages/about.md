@@ -20,7 +20,13 @@ social: true # includes social icons at the bottom of the page
 ---
 
 Hi! I am a PhD student at :austria: ISTA & :de: MPI-IS, 
-supervised by [Francesco Locatello](https://www.francescolocatello.com) and [Georg Martius](https://al.is.mpg.de). My research focus on identifiability in representation learning and the applicability of causal representation learning for scientific discovery.
+supervised by [Francesco Locatello](https://www.francescolocatello.com) and [Georg Martius](https://al.is.mpg.de). 
+
+My research focuses on identifiability in representation learning and the applicability of causal representation learning for scientific discovery.
+
+Other research interests that are not necessary relavant for my PhD include: social psychology, dream interpretation and color theory.
+
+
 
 
 
