@@ -32,7 +32,7 @@
   type: time_table
   contents:
     - title: Applied Scientist Intern
-      institution: Amazon Web Service, DE
+      institution: Amazon Web Services, DE
       year: 2022
       # description:
       #   - Description 1.
@@ -71,13 +71,9 @@
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2022
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
+        - Amazon-MPI PhD fellowship
 
 - title: Academic Interests
   type: nested_list
@@ -85,6 +81,7 @@
     - title: Causal Representation Learning 
       items:
         - Identifiability in CRL
+        - Application of CRL in science
     - title: Social Psychology
       items:
         - Description 1.
