@@ -5,7 +5,7 @@ inline: true
 related_posts: false
 ---
 
-:sloth: Oral presentation at Neurips2023 workshop in Causal Representation Learning
+:sloth: Oral presentation at [Neurips2023 workshop in Causal Representation Learning](https://neurips.cc/virtual/2023/workshop/66497)
 
 <!-- ---
 layout: post
