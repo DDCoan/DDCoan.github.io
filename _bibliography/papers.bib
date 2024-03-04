@@ -1,27 +1,52 @@
 ---
 ---
 
-@inproceedings{
+@article{
 yao2024multiview,
 title={Multi-View Causal Representation Learning with Partial Observability},
 author={Dingling Yao and Danru Xu and Sebastien Lachapelle and Sara Magliacane and Perouz Taslakian and Georg Martius and Julius von K{\"u}gelgen and Francesco Locatello},
-booktitle={The Twelfth International Conference on Learning Representations},
+journal={The Twelfth International Conference on Learning Representations},
 year={2024},
-url={https://openreview.net/forum?id=OGtnhKQJms}
+arxiv={2311.04056},
+selected={true},
+preview={crl_latent.pdf},
+website={https://openreview.net/forum?id=OGtnhKQJms},
+abstract={We present a unified framework for studying the identifiability of representations learned from simultaneously observed views, 
+such as different data modalities. 
+We allow a partially observed setting in which each view constitutes a nonlinear mixture of a subset of underlying latent variables, 
+which can be causally related. 
+We prove that the information shared across all subsets of any number of views can be learned up to a smooth bijection using contrastive learning and a single encoder per view. 
+We also provide graphical criteria indicating which latent variables can be identified through a simple set of rules, 
+which we refer to as identifiability algebra. 
+Our general framework and theoretical results unify and extend several previous works on multi-view nonlinear ICA, disentanglement, and causal representation learning. 
+We experimentally validate our claims on numerical, image, and multi- modal data sets. 
+Further, we demonstrate that the performance of prior methods is recovered in different special cases of our setup. 
+Overall, we find that access to multiple partial views enables us to identify a more fine-grained representation, under the generally milder assumption of partial observability.}
 }
 
-@inproceedings{xu2023sparsity,
+@article{xu2023sparsity,
   title={A Sparsity Principle for Partially Observable Causal Representation Learning},
   author={Xu, Danru and Yao, Dingling and Lachapelle, Sebastien and Taslakian, Perouz and von K{\"u}gelgen, Julius and Locatello, Francesco and Magliacane, Sara},
-  booktitle={Causal Representation Learning Workshop at NeurIPS 2023},
-  year={2023}
+  journal={Causal Representation Learning Workshop at NeurIPS 2023},
+  year={2023},
+  selected={true},
+  preview={},
+  website={}
 }
 
-@inproceedings{yu2021active,
+@article{yu2021active,
   title={Active Learning in Gaussian Process State Space Model},
   author={Yu, Hon Sum Alec and Yao, Dingling and Zimmer, Christoph and Toussaint, Marc and Nguyen-Tuong, Duy},
-  booktitle={Machine Learning and Knowledge Discovery in Databases. Research Track: European Conference, ECML PKDD 2021, Bilbao, Spain, September 13--17, 2021, Proceedings, Part III 21},
+  journal={Machine Learning and Knowledge Discovery in Databases. Research Track: European Conference, ECML PKDD 2021, Bilbao, Spain, September 13--17, 2021, Proceedings, Part III 21},
   pages={346--361},
   year={2021},
-  organization={Springer}
+  selected={true},
+  arxiv={2108.00819},
+  preview={},
+  website={},
+  abstract={We investigate active learning in Gaussian Process state-space models (GPSSM). 
+  Our problem is to actively steer the system through latent states by determining its inputs such that the underlying dynamics can be optimally learned by a GPSSM. 
+  In order that the most informative inputs are selected, we employ mutual information as our active learning criterion. 
+  In particular, we present two approaches for the approximation of mutual information for the GPSSM given latent states. 
+  The proposed approaches are evaluated in several physical systems where we actively learn the underlying non-linear dynamics represented by the state-space model.}
 }
