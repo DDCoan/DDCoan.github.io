@@ -4,7 +4,7 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Dingling
-middle_name: 
+middle_name:
 last_name: YAO
 email: yaodingling806@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -172,7 +172,7 @@ collections:
     output: true
     permalink: /news/:path/
   projects:
-    output: false
+    output: true
     permalink: /projects/:path/
 
 announcements:
@@ -203,7 +203,7 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ["_pages"]
+include: ["_pages/about.md","_pages/publications.md","_pages/news.md","_pages/cv.md"]
 exclude:
   - bin
   - CONTRIBUTING.md
