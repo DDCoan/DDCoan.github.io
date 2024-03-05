@@ -3,8 +3,6 @@
   contents:
     - name: Full Name
       value: Dingling Yao
-    - name: Date of Birth
-      value: 10th May 1997
     - name: Languages
       value: Chinese, English, German
 
@@ -22,7 +20,7 @@
       #       - Sub-description 1.
       #       - Sub-description 2.
     - title: Master & Bachelor of Science
-      institution: University of Tuebingen, Germany
+      institution: University of Tübingen, Germany
       year: 2016-2021
       description:
         - Computer Science
@@ -71,7 +69,7 @@
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 2022
+    - year: 2022-Now
       items:
         - Amazon-MPI PhD fellowship
 
@@ -80,10 +78,20 @@
   contents:
     - title: Causal Representation Learning 
       items:
-        - Identifiability in CRL
-        - Application of CRL in science
+        - Identifiability in representation learning
+        - Application of CRL in scientific discovery
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Aquarell :art:, Interior Design :city_sunset:, Bunnies :rabbit:.
+    - Aquarelle :art:
+    - Bunnies :rabbit:
+    - Dancing :dancer:
+    - Interior Design :city_sunset:
+
+- title: Other Anti-Interests
+  type: list
+  contents:
+    - Walking :walking:
+    - Running :runner:
+

@@ -9,6 +9,7 @@ journal={The Twelfth International Conference on Learning Representations},
 year={2024},
 arxiv={2311.04056},
 selected={true},
+bibtex_show={true},
 preview={crl_latent.pdf},
 website={https://openreview.net/forum?id=OGtnhKQJms},
 abstract={We present a unified framework for studying the identifiability of representations learned from simultaneously observed views, 
@@ -30,8 +31,21 @@ Overall, we find that access to multiple partial views enables us to identify a 
   journal={Causal Representation Learning Workshop at NeurIPS 2023},
   year={2023},
   selected={true},
-  preview={},
-  website={}
+  bibtex_show={true},
+  website={https://openreview.net/forum?id=Whr6uobelR},
+  preview={sparsity.png}
+  abstract={Causal representation learning (CRL) aims at identifying high-level causal variables from low-level data, 
+  e.g. images. 
+  Most current methods assume that all causal variables are captured in the high-dimensional observations. 
+  The few exceptions assume multiple partial observations of the same state, 
+  or focus only on the shared causal representations across multiple domains. 
+  In this work, we focus on learning causal representations from data under partial observability, 
+  i.e., when some of the causal variables are masked and therefore not captured in the observations, 
+  the observations represent different underlying causal states and the set of masked variables changes across the different samples. 
+  We introduce two theoretical results for identifying causal variables in this setting by exploiting a sparsity regularizer. 
+  For linear mixing functions, we provide a theorem that allows us to identify the causal variables up to permutation and element-wise linear transformations without parametric assumptions on the underlying causal model. 
+  For piecewise linear mixing functions, we provide a similar result that allows us to identify Gaussian causal variables up to permutation and element-wise linear transformations. 
+  We test our theoretical results on simulated data, showing their effectiveness.},
 }
 
 @article{yu2021active,
@@ -42,8 +56,9 @@ Overall, we find that access to multiple partial views enables us to identify a 
   year={2021},
   selected={true},
   arxiv={2108.00819},
-  preview={},
-  website={},
+  preview={al_gpssm.png},
+  bibtex_show={true},
+  website={https://link.springer.com/chapter/10.1007/978-3-030-86523-8_21},
   abstract={We investigate active learning in Gaussian Process state-space models (GPSSM). 
   Our problem is to actively steer the system through latent states by determining its inputs such that the underlying dynamics can be optimally learned by a GPSSM. 
   In order that the most informative inputs are selected, we employ mutual information as our active learning criterion. 
