@@ -76,7 +76,7 @@
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Causal Representation Learning 
+    - title: Causal Representation Learning
       items:
         - Identifiability in representation learning
         - Application of CRL in scientific discovery
@@ -84,14 +84,9 @@
 - title: Other Interests
   type: list
   contents:
-    - Aquarelle :art:
-    - Bunnies :rabbit:
-    - Dancing :dancer:
-    - Interior Design :city_sunset:
-
-- title: Other Anti-Interests
-  type: list
-  contents:
-    - Walking :walking:
-    - Running :runner:
-
+    - title: Hobbies
+      items:
+        - Aquarelle :art:
+        - Bunnies :rabbit:
+        - Dancing :dancer:
+        - Interior Design :city_sunset:
