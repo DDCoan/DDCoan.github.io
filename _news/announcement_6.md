@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-:sloth: Checkout our new preprint [Marrying Causal Representation Learning with Dynamical Systems for Science](https://arxiv.org/abs/2405.13888)
+:sloth: Check our new preprint [Marrying Causal Representation Learning with Dynamical Systems for Science](https://arxiv.org/abs/2405.13888)
