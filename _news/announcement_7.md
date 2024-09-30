@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2024-09-30 07:59:00-0400
+date: 2024-09-04 07:59:00-0400
 inline: true
 related_posts: false
 ---
 
-:sloth: Our paper [Marrying Causal Representation Learning with Dynamical Systems for Science](https://nips.cc/virtual/2024/poster/95516) was accepted at NeurIPS 2024.
+:sloth: Check our new preprint [Unifying Causal Representation Learning with the Invariance Principle](https://arxiv.org/abs/2409.02772).
