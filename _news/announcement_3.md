@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-:sloth: Our paper [Multiview Causal Representation Learning with Partial Observability](https://openreview.net/forum?id=OGtnhKQJms) was accepted at ICLR 2024 (**Spotlight**)
+:sloth: Our paper [Multiview Causal Representation Learning with Partial Observability](https://openreview.net/forum?id=OGtnhKQJms) was accepted at ICLR 2024 (**Spotlight**).
