@@ -1,0 +1,45 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="92" y1="42" x2="1082" y2="588" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8F6F2"/>
+      <stop offset="0.58" stop-color="#F5EFE4"/>
+      <stop offset="1" stop-color="#F2E9D8"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(990 138) rotate(133.347) scale(282.17 298.862)">
+      <stop stop-color="#BFD8FF" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#BFD8FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(846 472) rotate(-168.269) scale(354.087 278.211)">
+      <stop stop-color="#F6D58A" stop-opacity="0.72"/>
+      <stop offset="1" stop-color="#F6D58A" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="portraitClip">
+      <rect x="819" y="83" width="285" height="408" rx="34"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1000" cy="156" r="216" fill="url(#glowA)"/>
+  <circle cx="868" cy="492" r="228" fill="url(#glowB)"/>
+
+  <rect x="76" y="70" width="1048" height="490" rx="42" fill="white" fill-opacity="0.54" stroke="#E8E0D2"/>
+  <rect x="819" y="83" width="285" height="408" rx="34" fill="#F4EDE0"/>
+  <image href="../me.jpeg" x="819" y="83" width="285" height="408" preserveAspectRatio="xMidYMid slice" clip-path="url(#portraitClip)"/>
+
+  <rect x="819" y="510" width="285" height="36" rx="18" fill="white" fill-opacity="0.76" stroke="#E7DECF"/>
+  <text x="841" y="533" fill="#756B5A" font-family="Georgia, 'Times New Roman', serif" font-size="17" letter-spacing="0.18em">SCIENTIFIC AI</text>
+
+  <text x="122" y="166" fill="#7A6F61" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" letter-spacing="0.28em">DINGLING YAO</text>
+  <text x="122" y="250" fill="#1D1A16" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="700">Machine Learning</text>
+  <text x="122" y="330" fill="#1D1A16" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="700">Researcher</text>
+
+  <text x="122" y="404" fill="#5C5449" font-family="Arial, Helvetica, sans-serif" font-size="31">
+    AI for Science · Representation Learning
+  </text>
+  <text x="122" y="448" fill="#5C5449" font-family="Arial, Helvetica, sans-serif" font-size="31">
+    Causality · Climate &amp; Physics
+  </text>
+
+  <rect x="122" y="491" width="472" height="2" fill="#D8CCB6"/>
+  <text x="122" y="538" fill="#7A6F61" font-family="Arial, Helvetica, sans-serif" font-size="24" letter-spacing="0.12em">ISTA · MPI-IS · REPRESENTATION LEARNING</text>
+</svg>
