@@ -13,6 +13,7 @@ import {
   Triangle,
 } from "lucide-react";
 import portrait from "../me.jpeg";
+import cvFile from "../my_cv.pdf";
 
 const CONTAINER = "mx-auto w-full max-w-6xl px-5 sm:px-8 lg:px-10";
 const Motion = motion;
@@ -272,7 +273,7 @@ const DATA = {
       href: "https://scholar.google.com/citations?user=vOJUvb0AAAAJ&hl=en",
       icon: BookOpen,
     },
-    { label: "CV", href: "/my_cv.pdf", icon: FileText },
+    { label: "CV", href: cvFile, icon: FileText },
   ],
 };
 
