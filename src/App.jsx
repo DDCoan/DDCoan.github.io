@@ -10,6 +10,8 @@ import {
   Github,
   Linkedin,
   Mail,
+  MessageSquareText,
+  Send,
   Triangle,
 } from "lucide-react";
 import portrait from "../me.jpeg";
@@ -34,7 +36,7 @@ const DATA = {
     "Climate & Physics Modeling",
   ],
   metrics: [
-    { label: "Selected papers", value: "9" },
+    { label: "Selected papers", value: "10" },
     { label: "Invited talks", value: "5" },
     { label: "Workshops led", value: "2" },
     { label: "Research areas", value: "4" },
@@ -78,6 +80,21 @@ const DATA = {
     },
   ],
   publications: [
+    {
+      year: "2026",
+      title: "The Perception–Physics Paradox: Probing Scientific Alignment with TC-Bench",
+      authors: [
+        "Dingling Yao",
+        "Andrea Polesello",
+        "Adeel Pervez",
+        "Caroline Muller",
+        "Francesco Locatello",
+      ],
+      meta: "ICML 2026",
+      links: [
+        { label: "Paper", href: "https://arxiv.org/abs/2605.24782" },
+      ],
+    },
     {
       year: "2025",
       title: "Unifying Causal Representation Learning with the Invariance Principle",
@@ -803,6 +820,7 @@ function Notes() {
 
 function Contact() {
   const [copied, setCopied] = useState(false);
+  const [question, setQuestion] = useState("");
 
   async function handleCopyEmail() {
     try {
@@ -814,52 +832,91 @@ function Contact() {
     }
   }
 
+  function handleQuestionSubmit(event) {
+    event.preventDefault();
+
+    const subject = encodeURIComponent("Question about scientific machine learning");
+    const body = encodeURIComponent(question.trim());
+    window.location.href = `mailto:${DATA.email}?subject=${subject}&body=${body}`;
+  }
+
   return (
     <section id="contact" className="py-16 sm:py-24">
       <div className={CONTAINER}>
-        <div className="rounded-[2rem] border border-stone-200 bg-stone-950 p-8 text-stone-100 shadow-[0_30px_80px_rgba(34,26,10,0.18)] sm:p-10">
-          <div className="max-w-2xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-stone-400">
-              Contact
-            </p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
-              Let’s talk about scientific machine learning.
-            </h2>
-            <p className="mt-4 text-base leading-7 text-stone-300">
-              For collaborations, talks, workshop ideas, or research conversations, email is the fastest path.
-            </p>
+        <div className="grid gap-6 rounded-[2rem] border border-stone-200 bg-stone-950 p-8 text-stone-100 shadow-[0_30px_80px_rgba(34,26,10,0.18)] sm:p-10 lg:grid-cols-[1fr_0.8fr]">
+          <div>
+            <div className="max-w-2xl">
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-stone-400">
+                Contact
+              </p>
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
+                Let’s talk about scientific machine learning.
+              </h2>
+              <p className="mt-4 text-base leading-7 text-stone-300">
+                For collaborations, talks, workshop ideas, or research conversations, email is the fastest path.
+              </p>
+            </div>
+
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a
+                href={`mailto:${DATA.email}`}
+                className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-medium text-stone-950 transition hover:bg-stone-200"
+              >
+                <Mail className="h-4 w-4" />
+                {DATA.email}
+              </a>
+              <button
+                type="button"
+                onClick={handleCopyEmail}
+                className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 text-sm font-medium text-stone-100 transition hover:border-white/35 hover:bg-white/5"
+              >
+                <Copy className="h-4 w-4" />
+                {copied ? "Copied" : "Copy email"}
+              </button>
+              {DATA.socialLinks.map((item) => {
+                const Icon = item.icon;
+                return (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 text-sm font-medium text-stone-100 transition hover:border-white/35 hover:bg-white/5"
+                  >
+                    <Icon className="h-4 w-4" />
+                    {item.label}
+                  </a>
+                );
+              })}
+            </div>
           </div>
 
-          <div className="mt-8 flex flex-wrap gap-3">
-            <a
-              href={`mailto:${DATA.email}`}
-              className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-medium text-stone-950 transition hover:bg-stone-200"
+          <form
+            onSubmit={handleQuestionSubmit}
+            className="rounded-[1.5rem] border border-white/15 bg-white/[0.06] p-5"
+          >
+            <label
+              htmlFor="question"
+              className="inline-flex items-center gap-2 text-sm font-medium text-stone-100"
             >
-              <Mail className="h-4 w-4" />
-              {DATA.email}
-            </a>
+              <MessageSquareText className="h-4 w-4" />
+              Ask a question
+            </label>
+            <textarea
+              id="question"
+              value={question}
+              onChange={(event) => setQuestion(event.target.value)}
+              placeholder="What would you like to discuss?"
+              rows={6}
+              className="mt-4 min-h-36 w-full resize-y rounded-[1rem] border border-white/15 bg-stone-900/70 px-4 py-3 text-sm leading-6 text-stone-100 outline-none transition placeholder:text-stone-500 focus:border-white/40 focus:bg-stone-900"
+            />
             <button
-              type="button"
-              onClick={handleCopyEmail}
-              className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 text-sm font-medium text-stone-100 transition hover:border-white/35 hover:bg-white/5"
+              type="submit"
+              disabled={question.trim().length === 0}
+              className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-medium text-stone-950 transition hover:bg-stone-200 disabled:cursor-not-allowed disabled:bg-stone-500 disabled:text-stone-300"
             >
-              <Copy className="h-4 w-4" />
-              {copied ? "Copied" : "Copy email"}
+              <Send className="h-4 w-4" />
+              Email question
             </button>
-            {DATA.socialLinks.map((item) => {
-              const Icon = item.icon;
-              return (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 text-sm font-medium text-stone-100 transition hover:border-white/35 hover:bg-white/5"
-                >
-                  <Icon className="h-4 w-4" />
-                  {item.label}
-                </a>
-              );
-            })}
-          </div>
+          </form>
         </div>
       </div>
     </section>
