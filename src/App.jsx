@@ -45,7 +45,7 @@ const DATA = {
     {
       title: "TC-Bench: Probing Scientific Alignment",
       contribution:
-        "Introduces a tropical cyclone benchmark and probing protocol to test whether vision foundation models learn physically meaningful structure rather than visual shortcuts.",
+        "Reveals the Perception–Physics Paradox: vision models can look strong under visual OOD tests while losing the physical resolution needed to distinguish scientifically meaningful cyclone structure.",
       venue: "ICML 2026",
       status: "Conference paper",
       accent: "from-rose-100 via-sky-50 to-white",
