@@ -43,6 +43,17 @@ const DATA = {
   ],
   projects: [
     {
+      title: "TC-Bench: Probing Scientific Alignment",
+      contribution:
+        "Introduces a tropical cyclone benchmark and probing protocol to test whether vision foundation models learn physically meaningful structure rather than visual shortcuts.",
+      venue: "ICML 2026",
+      status: "Conference paper",
+      accent: "from-rose-100 via-sky-50 to-white",
+      links: [
+        { label: "Paper", href: "https://arxiv.org/abs/2605.24782" },
+      ],
+    },
+    {
       title: "When can a Representation Answer Scientific Questions?",
       contribution:
         "Introduces T-MEX to test whether learned representations support causal and scientifically meaningful downstream questions.",
@@ -64,18 +75,6 @@ const DATA = {
       links: [
         { label: "Paper", href: "https://arxiv.org/abs/2409.02772" },
         { label: "Code", href: "https://arxiv.org/abs/2409.02772" },
-      ],
-    },
-    {
-      title: "CRL Meets Dynamical Systems",
-      contribution:
-        "Connects causal representation learning with dynamical systems to recover physical variables in structured scientific data.",
-      venue: "NeurIPS 2024",
-      status: "Conference paper",
-      accent: "from-sky-100 via-cyan-50 to-white",
-      links: [
-        { label: "Paper", href: "https://proceedings.neurips.cc/paper_files/paper/2024/hash/83eb339ed42297658fa24b5cec939285-Abstract-Conference.html" },
-        { label: "Code", href: "https://github.com/CausalLearningAI/crl-dynamical-systems" },
       ],
     },
   ],
